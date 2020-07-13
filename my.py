@@ -18,8 +18,6 @@ TestDataFile = './Images/TestSamples/{0:1d}-{1:04d}.png'
 OutFile = './Images/OutSamples/gray_{0:1d}-{1:04d}.png'
 
 # LoadTemplates
-
-
 def LoadTemplates():
     labels = np.zeros(TrainingSampleNum, dtype=np.uint8)
     templates = np.zeros(
@@ -34,7 +32,6 @@ def LoadTemplates():
             i += 1
 
     return templates, labels
-
 
 # CalcDistance
 # 今回は L1 距離を算出
