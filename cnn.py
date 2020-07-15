@@ -35,8 +35,8 @@ for label in range(ClassN):
         i += 1
 
 # 変形
-x_train /= 255
-x_test /= 255
+x_train = np.ceil(x_train / 255)
+x_test = np.ceil(x_test / 255)
 x_train = x_train.reshape((len(x_train), 1, Size, Size))
 x_test = x_test.reshape((len(x_test), 1, Size, Size))
 
